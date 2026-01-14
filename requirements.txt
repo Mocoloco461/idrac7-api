@@ -1,4 +1,4 @@
 fastapi[standard]
 pydantic>=2.7.0,<3.0.0
-requests>=22.32.5
+requests
 urllib3>=2.6.3
