@@ -24,7 +24,7 @@ def onoff(mode:str):
         timeout=10
     )
     if response.status_code in [200,204]:
-        return {"message": f"The server is turn {mode}", "statut_code":response.status_code}
+        return {"message": f"The server is turned {mode}", "statut_code":response.status_code}
     return {"error": "Failed to execute command", "details": response.text, "status_code": response.status_code}
 
 
