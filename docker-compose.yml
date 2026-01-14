@@ -1,11 +1,10 @@
 services:
   api:
     container_name: idrac-api
-    build: .
+    build:
+      context: .
+      network: host
     env_file:
       - .env
     ports:
       - 6200:80
-    dns:
-    - 1.1.1.1
-    - 8.8.8.8
