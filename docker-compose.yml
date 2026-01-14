@@ -1,0 +1,9 @@
+services:
+  api:
+    container_name: idrac-api
+    build: .
+    env_file:
+      - .env
+    ports:
+      - 6200:80
+    

@@ -1,0 +1,7 @@
+FROM python:3.9
+WORKDIR /api
+COPY ./requirements.txt /api
+RUN pip install --no-cache-dir --upgrade -r /api/requirements.txt
+COPY . /api
+CMD ["fastapi", "run", "main.py", "--port", "80"]
+EXPOSE 80
