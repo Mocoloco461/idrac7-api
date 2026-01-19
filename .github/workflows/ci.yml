@@ -2,6 +2,8 @@ name: ci
 
 on:
   push:
+    branches:
+      - add_ci
     
 
 jobs:
@@ -25,4 +27,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: user/app:latest
+          tags: moshe2003/idrac-api:latest
