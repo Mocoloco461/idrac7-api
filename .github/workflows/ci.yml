@@ -3,7 +3,7 @@ name: ci
 on:
   push:
     branches:
-      - add_ci
+      - pre_prod
     
 
 jobs:
